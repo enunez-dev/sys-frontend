@@ -9,7 +9,7 @@ pipeline {
         separator(name:"NGINX_CONFIGURATION", sectionHeader:"NGINX CONFIGURATION")        
         string(name: 'NGINX_EXECUTABLE_PATH', defaultValue: 'C:\\nginx\\nginx.exe', description: 'Set the path to Nginx executable')
         string(name: 'NGINX_BASE_PATH', defaultValue: 'C:\\nginx\\', description: 'Set the path to Nginx base')
-        string(name: 'HTML_PATH', defaultValue: 'C:\\nginx\\html\\sys-frontend', description: 'Set destination for frontend files')
+        string(name: 'HTML_PATH', defaultValue: 'C:\\nginx\\html\\frontend', description: 'Set destination for frontend files')
 
         separator(name:"PUBLISH_CONFIGURATION", sectionHeader:"PUBLISH CONFIGURATION")    
         booleanParam(name: 'RUN_INSTALL', defaultValue: false, description: 'Check to run install dependecies')
